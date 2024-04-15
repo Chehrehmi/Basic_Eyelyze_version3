@@ -30,14 +30,14 @@ public class SplashScreen extends AppCompatActivity {
 
         // LOTTIE
         lottie = findViewById(R.id.lottie);
-        lottie.animate().setDuration(2000).setStartDelay(2900);
+        lottie.animate().setDuration(200).setStartDelay(1000);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i  = new Intent(getApplicationContext(), MainActivity.class);
+                Intent i  = new Intent(getApplicationContext(), Login.class);
                 startActivity(i);
             }
-        },5000);
+        },3000);
 
     }
 }
